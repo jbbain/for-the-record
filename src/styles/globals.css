@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+a { color: inherit; }
+html { scroll-behavior: smooth; }
+
+.header { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:18px 0; }
+.footer { opacity:.85; font-size: .9rem; padding: 24px 0 60px; }
+
+.section { scroll-margin-top: 90px; }
+body.modal-open { overflow: hidden; }
