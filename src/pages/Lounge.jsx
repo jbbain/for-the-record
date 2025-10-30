@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PasswordGate from "../components/PasswordGate";
 import DonationThermometer from "../components/DonationThermometer";
+import { asset } from "../utils/asset";
 
 export default function Lounge(){
   const [unlocked, setUnlocked] = useState(false);
@@ -32,7 +33,7 @@ export default function Lounge(){
         <h3>Gallery</h3>
         <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(220px,1fr))', gap:10}}>
           {[1,2,3,4,5,6].map(i=> (
-            <div key={i} className="surface sheen" style={{aspectRatio:'4/3', background:`url(/media/p${i}.jpg) center/cover no-repeat`}} />
+            <div key={i} className="surface sheen" style={{aspectRatio:'4/3', background:`url(${asset(`media/p${i}.jpg`)}) center/cover no-repeat`}} />
           ))}
         </div>
       </div>
@@ -40,7 +41,7 @@ export default function Lounge(){
       <div className="surface" style={{padding:22}}>
         <h3>Recap Reel</h3>
         <video controls loop style={{width:'100%', borderRadius:'12px'}}>
-          <source src="/media/hero-loop.mp4" type="video/mp4" />
+          <source src={asset("media/hero-loop.mp4")} type="video/mp4" />
         </video>
       </div>
     </main>

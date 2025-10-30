@@ -12,7 +12,7 @@ export default function Home(){
       <HeroCentered
         title="For the Record —  Platinum Edition"
         subtitle = "Cornell's 40th Birthday Celebration"
-        image="/media/hero-bw.jpg"
+        image="media/hero-bw.jpg"
       />
 
       <QuoteBand text="Every era a verse. Every friendship a feature. Every memory a track." author="C.A. Lynch" />

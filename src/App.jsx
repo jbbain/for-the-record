@@ -7,6 +7,7 @@ import RSVPPage from "./pages/RSVP";
 import RSVPSuccess from "./pages/RSVPSuccess";
 import "./styles/theme.css";
 import "./styles/globals.css";
+import { asset } from "./utils/asset";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -23,7 +24,7 @@ export default function App(){
         <Route path="/donate" element={<ExternalDonateRedirect/>}/>
       </Routes>
       <Footer/>
-      <audio id="ambient-audio" src="/media/ambient-vinyl.mp3" loop preload="auto" />
+      <audio id="ambient-audio" src={asset("media/ambient-vinyl.mp3")} loop preload="auto" />
     </BrowserRouter>
   );
 }
